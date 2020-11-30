@@ -1,9 +1,5 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
 import numpy as np
 import cv2
-
 def detectCircles():
 # 加载图像
     image = cv2.imread('D:/fingerprintImg/test/16.jpg')
@@ -29,9 +25,4 @@ def detectCircles():
         cv2.imshow('output',output)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
-
-def main():
-    detectCircles()
-
-if __name__ == "__main__":
-    main()
+    return
