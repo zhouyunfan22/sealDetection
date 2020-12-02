@@ -1,12 +1,7 @@
-# This is a sample Python script.
+from Util import sealDetection
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-from Util import houghCircle
-
-
-
+pdfSrc = "D:/fingerprintImg/test/113.pdf"
+pdfName="调取证据清单"
 if __name__ == '__main__':
-    houghCircle.detectCircles()
+   print(sealDetection.sealDetection(pdfName, pdfSrc))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
